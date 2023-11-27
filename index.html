@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +12,47 @@
 
 <body>
     <header class="header">
-    <div class="container header__container">
-        <a href="#" class="logo header__logo">
-            <img src="img/header/logo.svg" alt="Аврора" class="logo__img">
-        </a>
-        <div class="nav">
+        <div class="container header__container">
+            <a href="#" class="logo header__logo">
+                <img src="img/header/logo.svg" alt="Аврора" class="logo__img">
+            </a>
+            <div class="nav">
+                <a href="" class="nav__link">
+                    Способы доставки
+                </a>
+                <a href="" class="nav__link">
+                    Услуги
+                </a>
+                <a href="" class="nav__link">
+                    Как заказать
+                </a>
+                <a href="" class="nav__link">
+                    Отзывы
+                </a>
+                <a href="" class="nav__link">
+                    Представительства
+                </a>
+                <a href="" class="nav__link">
+                    8 (495) 120 93 33
+                </a>
+            </div>
+            <a href="#" class="btn btn_transparent phone__link">
+                Позвоните мне
+            </a>
+
+
+
+            <!-- Кнопка меню-бургера -->
+            <button class="burger-menu-wrap">
+                <span class="burger-menu"></span>
+            </button>
+        </div>
+    </header>
+    <nav class="nav_box-mob">
+        <div class="nav_box-mob-list">
+            <a href="#" class="btn btn_transparent phone__link phone__link_mob">
+                Позвоните мне
+            </a>
             <a href="" class="nav__link">
                 Способы доставки
             </a>
@@ -31,211 +68,259 @@
             <a href="" class="nav__link">
                 Представительства
             </a>
-            <a href="" class="nav__link">
+            <a href="tel:+74951209333" class="nav__link">
                 8 (495) 120 93 33
             </a>
         </div>
-        <a href="#" class="btn btn_transparent phone__link">
-            Позвоните мне
-        </a>
-
-
-
-        <!-- Кнопка меню-бургера -->
-        <button class="burger-menu-wrap">
-            <span class="burger-menu"></span>
-        </button>
-    </div>
-</header>
-<nav class="nav_box-mob">
-    <div class="nav_box-mob-list">
-        <a href="#" class="btn btn_transparent phone__link phone__link_mob">
-            Позвоните мне
-        </a>
-        <a href="" class="nav__link">
-            Способы доставки
-        </a>
-        <a href="" class="nav__link">
-            Услуги
-        </a>
-        <a href="" class="nav__link">
-            Как заказать
-        </a>
-        <a href="" class="nav__link">
-            Отзывы
-        </a>
-        <a href="" class="nav__link">
-            Представительства
-        </a>
-        <a href="tel:+74951209333" class="nav__link">
-            8 (495) 120 93 33
-        </a>
-    </div>
-</nav>
+    </nav>
     <main>
         <section class="main">
-    <div class="container main__container">
-        <div class="main__content-box">
-            <div class="main__content-text-box">
-                <h1 class="main__title">
-                    Доставка грузов из Китая
-                    и Юго-Восточной Азии
-                </h1>
-                <p class="main__subtitle">
-                    Вьетнам, Таиланд, Сингапур, Камбоджа, Лаос, Индонезия и Мьянма
-                </p>
-                <h2 class="title main__down-title">
-                    Авиа/Авто/ЖД/Море
-                </h2>
-                <p class="main__text">
-                    от 1 дня за 3,5$
-                </p>
-                <p class="main__text main__text_icon">
-                    от 20 кг
-                </p>
-            </div>
-            <div class="btn-box main__btn-box">
-                <a href="#" class="btn_two main__btn_two">
-                    заказать доставку
-                </a>
-                <a href="#" class="btn main__btn">
-                    заказать доставку
-                </a>
-            </div>
-        </div>
-        <div class="main__animate-box">
-            <div class="wrap-img main__wrap-img">
+            <div class="container main__container">
+                <div class="main__content-box">
+                    <div class="main__content-text-box">
+                        <h1 class="main__title">
+                            Доставка грузов из Китая
+                            и Юго-Восточной Азии
+                        </h1>
+                        <p class="main__subtitle">
+                            Вьетнам, Таиланд, Сингапур, Камбоджа, Лаос, Индонезия и Мьянма
+                        </p>
+                        <h2 class="title main__down-title">
+                            Авиа/Авто/ЖД/Море
+                        </h2>
+                        <p class="main__text">
+                            от 1 дня за 3,5$
+                        </p>
+                        <p class="main__text main__text_icon">
+                            от 20 кг
+                        </p>
+                    </div>
+                    <div class="btn-box main__btn-box">
+                        <a href="#" class="btn_two main__btn_two">
+                            заказать доставку
+                        </a>
+                        <a href="#" class="btn main__btn">
+                            заказать доставку
+                        </a>
+                    </div>
+                </div>
+                <div class="main__animate-box">
+                    <!-- <div class="wrap-img main__wrap-img">
                 <picture><source srcset="img/main/main__img.webp" type="image/webp"><img src="img/main/main__img.png" alt="Доставка" class="img-bg"></picture>
+            </div> -->
+
+
+                    <div class="page">
+
+                        <div class="globe-wrapper">
+                            <canvas id="globe-3d"></canvas>
+                            <canvas id="globe-2d-overlay"></canvas>
+                            <div id="globe-popup-overlay">
+                                <div class="globe-popup"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="x-shader/x-fragment" id="fragment-shader-map">
+               uniform sampler2D u_map_tex;
+           
+               varying float vOpacity;
+               varying vec2 vUv;
+           
+               void main() {
+                   vec3 color = texture2D(u_map_tex, vUv).rgb;
+                   color -= .2 * length(gl_PointCoord.xy - vec2(.5));
+                   float dot = 1. - smoothstep(.38, .4, length(gl_PointCoord.xy - vec2(.5)));
+                   if (dot < 0.5) discard;
+                   gl_FragColor = vec4(color, dot * vOpacity);
+               }
+           </script>
+
+                    <script type="x-shader/x-vertex" id="vertex-shader-map">
+               uniform sampler2D u_map_tex;
+               uniform float u_dot_size;
+               uniform float u_time_since_click;
+               uniform vec3 u_pointer;
+           
+               #define PI 3.14159265359
+           
+               varying float vOpacity;
+               varying vec2 vUv;
+           
+               void main() {
+           
+                   vUv = uv;
+           
+                   // mask with world map
+                   float visibility = step(.2, texture2D(u_map_tex, uv).r);
+                   gl_PointSize = visibility * u_dot_size;
+           
+                   // make back dots semi-transparent
+                   vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                   vOpacity = (1. / length(mvPosition.xyz) - .7);
+                   vOpacity = clamp(vOpacity, .03, 1.);
+           
+                   // add ripple
+                   float t = u_time_since_click - .1;
+                   t = max(0., t);
+                   float max_amp = .15;
+                   float dist = 1. - .5 * length(position - u_pointer); // 0 .. 1
+                   float damping = 1. / (1. + 20. * t); // 1 .. 0
+                   float delta = max_amp * damping * sin(5. * t * (1. + 2. * dist) - PI);
+                   delta *= 1. - smoothstep(.8, 1., dist);
+                   vec3 pos = position;
+                   pos *= (1. + delta);
+           
+                   gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.);
+               }
+           </script>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
         <section class="deleviry">
-    <div class="deleviry-up">
-        <div class="container deleviry__container-up">
-            <h2 class="title deleviry__title">
-                Какая доставка вас интересует?
-            </h2>
-            <p class="deleviry__subtitle">
-                доставляем грузов от 5 дней из Китая, Вьетнама, Таиланда, Сингапура, Камбоджи, Лаоса, Индонезии и Мьянма
-            </p>
-        </div>
-    </div>
-    <div class="deleviry-down">
-        <div class="container deleviry__container-down">
-            <div class="deleviry__content-box">
-                <div class="deleviry__item">
-                    <h3 class="deleviry__item-title">
-                        Сборная
-                    </h3>
-                    <p class="deleviry__item-price">
-                        от 3,5$/кг
+            <div class="deleviry-up">
+                <div class="container deleviry__container-up">
+                    <h2 class="title deleviry__title">
+                        Какая доставка вас интересует?
+                    </h2>
+                    <p class="deleviry__subtitle">
+                        доставляем грузов от 5 дней из Китая, Вьетнама, Таиланда, Сингапура, Камбоджи, Лаоса, Индонезии
+                        и Мьянма
                     </p>
-                    <div class="deleviry__item-wrap-img">
-                        <picture><source srcset="img/delivery/deleviry__item-1.webp" type="image/webp"><img src="img/delivery/deleviry__item-1.png" alt="" class="img-bg"></picture>
-                    </div>
-                    <p class="deleviry__item-text">
-                        от 50 кг
-                    </p>
-                    <p class="deleviry__item-text">
-                        17-20 дней доставка
-                    </p>
-                    <a href="#" class="deleviry__btn">
-                        заказать доставку
-                    </a>
-                </div>
-                <div class="deleviry__item">
-                    <h3 class="deleviry__item-title">
-                        Экспресс
-                    </h3>
-                    <p class="deleviry__item-price">
-                        от 5,5$/кг
-                    </p>
-                    <div class="deleviry__item-wrap-img">
-                        <picture><source srcset="img/delivery/deleviry__item-2.webp" type="image/webp"><img src="img/delivery/deleviry__item-2.png" alt="" class="img-bg"></picture>
-                    </div>
-                    <p class="deleviry__item-text">
-                        от 20 кг
-                    </p>
-                    <p class="deleviry__item-text">
-                        1-3 дня доставка
-                    </p>
-                    <a href="#" class="deleviry__btn">
-                        заказать доставку
-                    </a>
-                </div>
-                <div class="deleviry__item">
-                    <h3 class="deleviry__item-title">
-                        Контейнерная
-                    </h3>
-                    <p class="deleviry__item-price">
-                        от ХХ $/кг
-                    </p>
-                    <div class="deleviry__item-wrap-img">
-                        <picture><source srcset="img/delivery/deleviry__item-3.webp" type="image/webp"><img src="img/delivery/deleviry__item-3.png" alt="" class="img-bg"></picture>
-                    </div>
-                    <p class="deleviry__item-text">
-                        от 1 контейнера
-                    </p>
-                    <p class="deleviry__item-text">
-                        30-35 дней доставка
-                    </p>
-                    <a href="#" class="deleviry__btn">
-                        заказать доставку
-                    </a>
-                </div>
-                <div class="deleviry__item">
-                    <h3 class="deleviry__item-title">
-                        Экспресс
-                    </h3>
-                    <p class="deleviry__item-price">
-                        от 5,5$/кг
-                    </p>
-                    <div class="deleviry__item-wrap-img">
-                        <picture><source srcset="img/delivery/deleviry__item-2.webp" type="image/webp"><img src="img/delivery/deleviry__item-2.png" alt="" class="img-bg"></picture>
-                    </div>
-                    <p class="deleviry__item-text">
-                        от 20 кг
-                    </p>
-                    <p class="deleviry__item-text">
-                        1-3 дня доставка
-                    </p>
-                    <a href="#" class="deleviry__btn">
-                        заказать доставку
-                    </a>
-                </div>
-                <div class="deleviry__item">
-                    <h3 class="deleviry__item-title">
-                        Контейнерная
-                    </h3>
-                    <p class="deleviry__item-price">
-                        от ХХ $/кг
-                    </p>
-                    <div class="deleviry__item-wrap-img">
-                        <picture><source srcset="img/delivery/deleviry__item-3.webp" type="image/webp"><img src="img/delivery/deleviry__item-3.png" alt="" class="img-bg"></picture>
-                    </div>
-                    <p class="deleviry__item-text">
-                        от 1 контейнера
-                    </p>
-                    <p class="deleviry__item-text">
-                        30-35 дней доставка
-                    </p>
-                    <a href="#" class="deleviry__btn">
-                        заказать доставку
-                    </a>
                 </div>
             </div>
-            <div class="deleviry__brands">
-                <p class="deleviry__brand-text"></p>
-                <div class="deleviry__brand-logo-wrap">
-                    img.img-bg
+            <div class="deleviry-down">
+                <div class="container deleviry__container-down">
+                    <div class="deleviry__content-box">
+                        <div class="deleviry__item">
+                            <h3 class="deleviry__item-title">
+                                Сборная
+                            </h3>
+                            <p class="deleviry__item-price">
+                                от 3,5$/кг
+                            </p>
+                            <div class="deleviry__item-wrap-img">
+                                <picture>
+                                    <source srcset="img/delivery/deleviry__item-1.webp" type="image/webp"><img
+                                        src="img/delivery/deleviry__item-1.png" alt="" class="img-bg">
+                                </picture>
+                            </div>
+                            <p class="deleviry__item-text">
+                                от 50 кг
+                            </p>
+                            <p class="deleviry__item-text">
+                                17-20 дней доставка
+                            </p>
+                            <a href="#" class="deleviry__btn">
+                                заказать доставку
+                            </a>
+                        </div>
+                        <div class="deleviry__item">
+                            <h3 class="deleviry__item-title">
+                                Экспресс
+                            </h3>
+                            <p class="deleviry__item-price">
+                                от 5,5$/кг
+                            </p>
+                            <div class="deleviry__item-wrap-img">
+                                <picture>
+                                    <source srcset="img/delivery/deleviry__item-2.webp" type="image/webp"><img
+                                        src="img/delivery/deleviry__item-2.png" alt="" class="img-bg">
+                                </picture>
+                            </div>
+                            <p class="deleviry__item-text">
+                                от 20 кг
+                            </p>
+                            <p class="deleviry__item-text">
+                                1-3 дня доставка
+                            </p>
+                            <a href="#" class="deleviry__btn">
+                                заказать доставку
+                            </a>
+                        </div>
+                        <div class="deleviry__item">
+                            <h3 class="deleviry__item-title">
+                                Контейнерная
+                            </h3>
+                            <p class="deleviry__item-price">
+                                от ХХ $/кг
+                            </p>
+                            <div class="deleviry__item-wrap-img">
+                                <picture>
+                                    <source srcset="img/delivery/deleviry__item-3.webp" type="image/webp"><img
+                                        src="img/delivery/deleviry__item-3.png" alt="" class="img-bg">
+                                </picture>
+                            </div>
+                            <p class="deleviry__item-text">
+                                от 1 контейнера
+                            </p>
+                            <p class="deleviry__item-text">
+                                30-35 дней доставка
+                            </p>
+                            <a href="#" class="deleviry__btn">
+                                заказать доставку
+                            </a>
+                        </div>
+                        <div class="deleviry__item">
+                            <h3 class="deleviry__item-title">
+                                Экспресс
+                            </h3>
+                            <p class="deleviry__item-price">
+                                от 5,5$/кг
+                            </p>
+                            <div class="deleviry__item-wrap-img">
+                                <picture>
+                                    <source srcset="img/delivery/deleviry__item-2.webp" type="image/webp"><img
+                                        src="img/delivery/deleviry__item-2.png" alt="" class="img-bg">
+                                </picture>
+                            </div>
+                            <p class="deleviry__item-text">
+                                от 20 кг
+                            </p>
+                            <p class="deleviry__item-text">
+                                1-3 дня доставка
+                            </p>
+                            <a href="#" class="deleviry__btn">
+                                заказать доставку
+                            </a>
+                        </div>
+                        <div class="deleviry__item">
+                            <h3 class="deleviry__item-title">
+                                Контейнерная
+                            </h3>
+                            <p class="deleviry__item-price">
+                                от ХХ $/кг
+                            </p>
+                            <div class="deleviry__item-wrap-img">
+                                <picture>
+                                    <source srcset="img/delivery/deleviry__item-3.webp" type="image/webp"><img
+                                        src="img/delivery/deleviry__item-3.png" alt="" class="img-bg">
+                                </picture>
+                            </div>
+                            <p class="deleviry__item-text">
+                                от 1 контейнера
+                            </p>
+                            <p class="deleviry__item-text">
+                                30-35 дней доставка
+                            </p>
+                            <a href="#" class="deleviry__btn">
+                                заказать доставку
+                            </a>
+                        </div>
+                    </div>
+                    <div class="deleviry__brands">
+                        <p class="deleviry__brand-text"></p>
+                        <div class="deleviry__brand-logo-wrap">
+                            img.img-bg
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
-    
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script type="module" src="js/planet.js"></script>
     <script type="module" src="js/script.min.js"></script>
 </body>
 
