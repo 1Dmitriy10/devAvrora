@@ -13,26 +13,27 @@
 <body>
     <header class="header">
     <div class="container header__container">
-        <a href="#" class="logo header__logo">
+        <div class="logo header__logo">
+            <a href="#main" class="logo-link _scroll"></a>
             <img src="img/header/logo.svg" alt="Аврора" class="logo__img">
-        </a>
+        </div>
         <div class="nav">
-            <a href="" class="nav__link">
+            <a href="#deleviry" class="nav__link _scroll">
                 Способы доставки
             </a>
-            <a href="" class="nav__link">
+            <a href="#service" class="nav__link _scroll">
                 Услуги
             </a>
-            <a href="" class="nav__link">
+            <a href="#order" class="nav__link _scroll">
                 Как заказать
             </a>
-            <a href="" class="nav__link">
+            <a href="#reviews" class="nav__link _scroll">
                 Отзывы
             </a>
-            <a href="" class="nav__link">
+            <a href="#adress" class="nav__link _scroll">
                 Представительства
             </a>
-            <a href="" class="nav__link">
+            <a href="tel:+74951209333" class="nav__link">
                 8 (495) 120 93 33
             </a>
         </div>
@@ -53,19 +54,19 @@
         <a href="#" class="btn btn_transparent phone__link phone__link_mob">
             Позвоните мне
         </a>
-        <a href="" class="nav__link">
+        <a href="#deleviry" class="nav__link _scroll">
             Способы доставки
         </a>
-        <a href="" class="nav__link">
+        <a href="#service" class="nav__link _scroll">
             Услуги
         </a>
-        <a href="" class="nav__link">
+        <a href="#order" class="nav__link _scroll">
             Как заказать
         </a>
-        <a href="" class="nav__link">
+        <a href="#reviews" class="nav__link _scroll">
             Отзывы
         </a>
-        <a href="" class="nav__link">
+        <a href="#adress" class="nav__link _scroll">
             Представительства
         </a>
         <a href="tel:+74951209333" class="nav__link">
@@ -74,7 +75,7 @@
     </div>
 </nav>
     <main>
-        <section class="main">
+        <section class="main" id="main">
     <div class="container main__container">
         <div class="main__content-box">
             <div class="main__content-text-box">
@@ -202,7 +203,7 @@ void main() {
         </div>
     </div>
 </section>
-        <section class="deleviry">
+        <section class="deleviry" id="deleviry">
     <div class="deleviry-up">
         <div class="container deleviry__container-up">
             <h2 class="title deleviry__title">
@@ -463,7 +464,7 @@ void main() {
         </div>
     </div>
 </section>
-        <section class="service">
+        <section class="service" id="service">
     <div class="service-up">
         <div class="container service__container-up">
             <h2 class="title service__title">
@@ -528,7 +529,7 @@ void main() {
         </div>
     </div>
 </section>
-        <section class="order">
+        <section class="order" id="order">
     <div class="order-up">
         <div class="container order__container-up">
             <h2 class="title order__title">
@@ -774,7 +775,7 @@ void main() {
         </div>
     </div>
 </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
     <div class="reviews-up">
         <div class="container reviews__container-up">
             <h2 class="title reviews__title">
@@ -832,6 +833,9 @@ void main() {
                         <picture><source srcset="img/reviews/reviews__item-img-5.webp" type="image/webp"><img src="img/reviews/reviews__item-img-5.png" alt="" class="reviews__pagination-item-img"></picture>
                     </div>
                 </div>
+                <div class="reviews__slider-bullets">
+                    <div class="swiper-pagination"></div>
+                </div>
                 <!-- Стрелки -->
                 <div class="reviews-slider-button-prev"></div>
                 <div class="reviews-slider-button-next"></div>
@@ -840,7 +844,7 @@ void main() {
         </div>
     </div>
 </section>
-        <section class="adress">
+        <section class="adress" id="adress">
     <div class="tabs">
         <div class="adress__tab-wrap">
             <h2 class="title adress__title">
@@ -854,6 +858,38 @@ void main() {
         </div>
         <div class="tabs__item-box">
             <div class="tabs__item">
+                <div class="adress__info-adress">
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-1.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Адрес:Москва, БЦ «РТС», Дмитровское шоссе д. 85
+                        </p>
+                    </div>
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-2.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Мобильный контакт
+                            <a href="tel:+74951209333" class="adress__info-item-link">
+                                +7 (495) 120-93-33
+                            </a>
+                        </p>
+                    </div>
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-3.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Электронная почта
+                            <a href="mailto:delivery@avrora-logistic.com" class="adress__info-item-link">
+                                delivery@avrora-logistic.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
                 <iframe class="adress__map"
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Af1164a90a3706f22946b78b30390c86942df3b11b04312047586451e2a5428ce&amp;source=constructor"
                     width="100%" height="720" frameborder="0"></iframe>
@@ -886,6 +922,38 @@ void main() {
                 </div>
             </div>
             <div class="tabs__item">
+                <div class="adress__info-adress">
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-1.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Адрес:проспект 100-летия Владивостока, дом 155, корп. 2, оф. 207
+                        </p>
+                    </div>
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-2.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Мобильный контакт
+                            <a href="tel:+74235572116" class="adress__info-item-link">
+                                +7 (423) 557-21-16
+                            </a>
+                        </p>
+                    </div>
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-3.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Электронная почта
+                            <a href="mailto:delivery@avrora-logistic.com" class="adress__info-item-link">
+                                delivery@avrora-logistic.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
                 <iframe class="adress__map"
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A38f10fb58f06e0f7aa5908c69d2ab0f8dae5711db45f421528d985ea1176e056&amp;source=constructor"
                     width="100%" height="720" frameborder="0"></iframe>
@@ -918,6 +986,38 @@ void main() {
                 </div>
             </div>
             <div class="tabs__item">
+                <div class="adress__info-adress">
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-1.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Адрес:上海市浦东新区汇成路888号 - (888 Huicheng Road, Pudong New Area, Shanghai)
+                        </p>
+                    </div>
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-2.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Мобильный контакт
+                            <a href="tel:+74951209333" class="adress__info-item-link">
+                                +7 (495) 120-93-33
+                            </a>
+                        </p>
+                    </div>
+                    <div class="adress__info-item">
+                        <div class="adress__info-item-wrap-img">
+                            <img src="img/address/adress__logo-3.svg" alt="" class="adress__info-item-img">
+                        </div>
+                        <p class="adress__info-item-text">
+                            Электронная почта
+                            <a href="mailto:delivery@avrora-logistic.com" class="adress__info-item-link">
+                                delivery@avrora-logistic.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
                 <iframe class="adress__map"
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A6d3aa0383146a26465efe76b393026060a49daf58b05c5b99fa2d4770bca235f&amp;source=constructor"
                     width="100%" height="720" frameborder="0"></iframe>
@@ -956,26 +1056,27 @@ void main() {
     <section class="footer">
     <div class="container footer__container">
         <div class="footer__up-row">
-            <a href="#" class="logo header__logo">
+            <div class="logo header__logo">
+                <a href="#main" class="logo-link _scroll"></a>
                 <img src="img/header/logo.svg" alt="Аврора" class="logo__img">
-            </a>
+            </div>
             <div class="nav">
-                <a href="" class="nav__link">
+                <a href="#deleviry" class="nav__link _scroll">
                     Способы доставки
                 </a>
-                <a href="" class="nav__link">
+                <a href="#service" class="nav__link _scroll">
                     Услуги
                 </a>
-                <a href="" class="nav__link">
+                <a href="#order" class="nav__link _scroll">
                     Как заказать
                 </a>
-                <a href="" class="nav__link">
+                <a href="#reviews" class="nav__link _scroll">
                     Отзывы
                 </a>
-                <a href="" class="nav__link">
+                <a href="#adress" class="nav__link _scroll">
                     Представительства
                 </a>
-                <a href="" class="nav__link">
+                <a href="tel:+74951209333" class="nav__link">
                     8 (495) 120 93 33
                 </a>
             </div>
@@ -992,10 +1093,12 @@ void main() {
 
             </p>
             <div class="footer__down-content-box">
-                <p class="footer__down-text">
-                    Создание и продвижение сайтов:
-                </p>
-                <img src="img/footer/footer__down-logo.svg" alt="">
+                <a target="_blank" class="footer__down-link" href="https://topgenius.ru/">
+                    <p class="footer__down-text">
+                        Создание и продвижение сайтов:
+                    </p>
+                    <img src="img/footer/footer__down-logo.svg" alt="">
+                </a>
             </div>
         </div>
     </div>
