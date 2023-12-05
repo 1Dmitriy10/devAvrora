@@ -738,7 +738,6 @@ body {
   height: 481px;
   position: relative;
   transition: 0.5s;
-  z-index: 10;
 }
 
 .main__slider-item-img {
@@ -1770,7 +1769,7 @@ body {
 }
 @media (max-width: 470px) {
   .reason__slider-item {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -1789,6 +1788,12 @@ body {
   transition: 0.3s !important;
   width: 160px !important;
   height: 160px !important;
+}
+@media (max-width: 470px) {
+  .trans.swiper-slide-active {
+    margin-left: 25px !important;
+    margin-right: 15px !important;
+  }
 }
 
 .reason__item-title {
@@ -2430,7 +2435,7 @@ body {
   z-index: 10;
   position: absolute;
   top: 206px;
-  left: 0;
+  left: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
